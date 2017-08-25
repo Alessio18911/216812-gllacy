@@ -1013,7 +1013,6 @@ body {
 	color: #323232;
 	background-color: #ffffff;
 	background-image: url("../img/arrow-black.png");
-	outline: none;
 }
 
 .price {
@@ -1036,8 +1035,40 @@ body {
 }
 
 .price .user-block-field {
-	padding-top: 16px;
-	padding-bottom: 16px;
+	position: relative;
+	padding-top: 17px;
+	padding-bottom: 15px;
+}
+
+.price .range-slider {
+	border: 2px solid rgba(248, 247, 244, 0.5);
+}
+
+.price .range-active {
+	position: absolute;
+	top: 17px;
+	left: 40px;
+	width: 45%;
+	border: 2px solid #f8f7f4;
+}
+
+.price .range-slider::before,
+.price .range-slider::after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 9px;
+	left: 35px;
+	width: 20px;
+	height: 20px;
+	background-color: #f8f7f4;
+	border-radius: 50%;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+
+.price .range-slider::after {
+	left: 133px;
 }
 
 .radio,
@@ -1064,7 +1095,10 @@ body {
 	        align-items: center;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	padding: 4px 12px;
+	padding-top: 4px;
+	padding-right: 12px;
+	padding-bottom: 5px;
+	padding-left: 12px;
 }
 
 .radio-controls label,
