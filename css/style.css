@@ -71,10 +71,10 @@ body {
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 18px;
 	color: #ffffff;
-	background-image: -webkit-gradient(linear, left top, right top, from(rgb(231,74,53)), to(rgb(242,104,67)));
-	background-image: -webkit-linear-gradient(left, rgb(231,74,53) 0, rgb(242,104,67) 100%);
-	background-image: -o-linear-gradient(left, rgb(231,74,53) 0, rgb(242,104,67) 100%);
-	background-image: linear-gradient(90deg, rgb(231,74,53) 0, rgb(242,104,67) 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(rgb(231, 74, 53)), to(rgb(242, 104, 67)));
+	background-image: -webkit-linear-gradient(left, rgb(231, 74, 53) 0, rgb(242, 104, 67) 100%);
+	background-image: -o-linear-gradient(left, rgb(231, 74, 53) 0, rgb(242, 104, 67) 100%);
+	background-image: linear-gradient(90deg, rgb( 231, 74, 53) 0, rgb( 242, 104, 67) 100%);
 	border: none;
 	border-radius: 25px;
 	-webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
@@ -83,17 +83,17 @@ body {
 }
 
 .all-btn:hover {
-	background-image: -webkit-gradient(linear, left top, right top, from(rgb(236,111,94)), to(rgb(245,134,105)));
-	background-image: -webkit-linear-gradient(left, rgb(236,111,94) 0, rgb(245,134,105) 100%);
-	background-image: -o-linear-gradient(left, rgb(236,111,94) 0, rgb(245,134,105) 100%);
-	background-image: linear-gradient(90deg, rgb(236,111,94) 0, rgb(245,134,105) 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(rgb(236, 111, 94)), to(rgb(245, 134, 105)));
+	background-image: -webkit-linear-gradient(left, rgb(236, 111, 94) 0, rgb(245, 134, 105) 100%);
+	background-image: -o-linear-gradient(left, rgb(236, 111, 94) 0, rgb(245, 134, 105) 100%);
+	background-image: linear-gradient(90deg, rgb(236, 111, 94) 0, rgb(245, 134, 105) 100%);
 }
 
 .all-btn:active {
-	background-image: -webkit-gradient(linear, left top, right top, from(rgb(225,97,62)), to(rgb(215,70,50)));
-	background-image: -webkit-linear-gradient(left, rgb(225,97,62) 0, rgb(215,70,50) 100%);
-	background-image: -o-linear-gradient(left, rgb(225,97,62) 0, rgb(215,70,50) 100%);
-	background-image: linear-gradient(90deg, rgb(225,97,62) 0, rgb(215,70,50) 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(rgb(225, 97, 62)), to(rgb(215, 70, 50)));
+	background-image: -webkit-linear-gradient(left, rgb(225, 97, 62) 0, rgb(215, 70, 50) 100%);
+	background-image: -o-linear-gradient(left, rgb(225, 97, 62) 0, rgb(215, 70, 50) 100%);
+	background-image: linear-gradient(90deg, rgb(225, 97, 62) 0, rgb(215, 70, 50) 100%);
 	-webkit-box-shadow: inset 0 2px 2px 0 #942718;
 			box-shadow: inset 0 2px 2px 0 #942718;
 }
@@ -1564,7 +1564,6 @@ body {
 	background-image: url("../img/map/map.png");
 	background-repeat: no-repeat;
 	background-position: center;
-	
 }
 
 .map {
