@@ -1,4 +1,4 @@
-/*----------------------------FONT--------------------------*/
+/* ----------------------------FONT-------------------------- */
 @font-face {
 	font-family: "Roboto";
 	src: url("../fonts/RobotoBold/RobotoBold.woff");
@@ -20,7 +20,7 @@
 	font-style: normal;
 }
 
-/*----------------------------COMMON--------------------------*/
+/* ----------------------------COMMON-------------------------- */
 
 body {
 	font-size: 14px;
@@ -48,7 +48,7 @@ body {
 	margin: 0 auto;
 }
 
-/*---------------------COMMON-CLASSES-------------------*/
+/* ---------------------COMMON-CLASSES------------------- */
 
 .page a {
 	font-size: 16px;
@@ -74,7 +74,7 @@ body {
 	background-image: -webkit-gradient(linear, left top, right top, from(rgb(231, 74, 53)), to(rgb(242, 104, 67)));
 	background-image: -webkit-linear-gradient(left, rgb(231, 74, 53) 0, rgb(242, 104, 67) 100%);
 	background-image: -o-linear-gradient(left, rgb(231, 74, 53) 0, rgb(242, 104, 67) 100%);
-	background-image: linear-gradient(90deg, rgb( 231, 74, 53) 0, rgb( 242, 104, 67) 100%);
+	background-image: linear-gradient(90deg, rgb(231, 74, 53) 0, rgb(242, 104, 67) 100%);
 	border: none;
 	border-radius: 25px;
 	-webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
@@ -111,12 +111,6 @@ body {
 	overflow: hidden;
 	-webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 			box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-}
-
-.all-form-show {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
 }
 
 .all-input {
@@ -198,7 +192,7 @@ body {
 	color: #5b9ddf;
 }
 
-/*----------------------------HEADER--------------------------*/
+/* ----------------------------HEADER-------------------------- */
 
 .header {
 	display: -webkit-box;
@@ -662,7 +656,7 @@ body {
 	line-height: 1;
 }
 
-/*----------------------------SLIDER--------------------------*/
+/* ----------------------------SLIDER-------------------------- */
 
 .slider {
 	position: relative;
@@ -783,7 +777,7 @@ body {
 	display: flex;
 }
 
-/*----------------------------BONUS--------------------------*/
+/* ----------------------------BONUS-------------------------- */
 
 .bonus {
 	display: -webkit-box;
@@ -864,7 +858,7 @@ body {
 .bonus .choc-btn {
 	width: 146px;
 }
-/*-------------------------BREADCRUMBS-------------------------*/
+/* -------------------------BREADCRUMBS------------------------- */
 
 .breadcrumbs-nav {
 	width: 413px;
@@ -922,7 +916,7 @@ body {
 	border-bottom: 1px solid rgba(247, 246, 243, 0.3);
 }
 
-/*---------------------------СATALOG-------------------------*/
+/* ---------------------------СATALOG------------------------- */
 
 .catalog {
 	display: -webkit-box;
@@ -1312,7 +1306,7 @@ body {
 	z-index: 2;
 }
 
-/*--------------------------PAGINATOR-------------------------*/
+/* --------------------------PAGINATOR------------------------- */
 
 .paginator {
 	max-width: 350px;
@@ -1373,7 +1367,7 @@ body {
 	cursor: default;
 }
 
-/*---------------------------ABOUT-US-------------------------*/
+/* ---------------------------ABOUT-US------------------------- */
 
 .about-us {
 	margin-bottom: 20px;
@@ -1459,7 +1453,7 @@ body {
 	background-position: -5px -633px;
 }
 
-/*---------------------------NEWS-SUBSCRIBE-------------------------*/
+/* ---------------------------NEWS-SUBSCRIBE------------------------- */
 
 .news-subscribe {
 	display: -webkit-box;
@@ -1555,7 +1549,7 @@ body {
 	line-height: 24px;
 }
 
-/*---------------------------MAP-FEEDBACK-------------------------*/
+/* ---------------------------MAP-FEEDBACK------------------------- */
 
 .map-wrapper {
 	position: relative;
@@ -1752,7 +1746,7 @@ body {
 	line-height: 1.33;
 }
 
-/*---------------------------FOOTER-------------------------*/
+/* ---------------------------FOOTER------------------------- */
 
 .footer {
 	display: -webkit-box;
