@@ -1158,7 +1158,7 @@ body {
 #checkbox-toggle-4:checked ~ .checkbox-controls label[for="checkbox-toggle-4"]::before,
 #checkbox-toggle-5:checked ~ .checkbox-controls label[for="checkbox-toggle-5"]::before {
 	top: -2px;
-	left: 0;
+	left: -2px;
 	width: 24px;
 	height: 24px;
 	background: url("../img/checkbox-on.svg") no-repeat center;
