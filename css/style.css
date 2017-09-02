@@ -1102,34 +1102,41 @@ body {
 	margin-right: 0;
 }
 
-.radio-controls label::before,
-.checkbox-controls label::before{
+.radio-controls label::before {
 	content: "";
 	position: absolute;
-	top: 1px;
-	left: 0;
-	width: 10px;
-	height: 10px;
-	background-clip: content-box;
-	border: 4px solid transparent;
-	border-radius: 50%;
-	-webkit-box-shadow: 0 0 0 1px #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
+	top: -1px;
+	left: -3px;
+	width: 22px;
+	height: 22px;
+	background: url("../img/radio-off.svg") no-repeat;
+	background-size: 100%;
+	opacity: 0.7;
+}
+
+.checkbox-controls label::before {
+	content: "";
+	position: absolute;
+	top: -1px;
+	left: -3px;
+	width: 21px;
+	height: 21px;
+	background: url("../img/checkbox-off.svg") no-repeat center;
+	background-size: 98%;
+	opacity: 0.7;
 }
 
 .radio-controls label:hover::before,
 .checkbox-controls label:hover::before {
-	-webkit-box-shadow: 0 0 0 2px #ffffff;
-			box-shadow: 0 0 0 2px #ffffff;
+	opacity: 1;
 }
 
 #radio1:checked ~ .radio-controls label[for="radio1"]::before,
 #radio2:checked ~ .radio-controls label[for="radio2"]::before,
 #radio3:checked ~ .radio-controls label[for="radio3"]::before,
 #radio4:checked ~ .radio-controls label[for="radio4"]::before {
-	background-color: #ffffff;
-	-webkit-box-shadow: 0 0 0 1px #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
+	background: url("../img/radio-on.svg") no-repeat;
+	background-size: 100%;
 }
 
 .checkbox {
@@ -1145,18 +1152,18 @@ body {
 	padding-right: 17px;
 }
 
-.checkbox-controls label::before {
-	border-radius: 4px;
-}
-
 #checkbox-toggle-1:checked ~ .checkbox-controls label[for="checkbox-toggle-1"]::before,
 #checkbox-toggle-2:checked ~ .checkbox-controls label[for="checkbox-toggle-2"]::before,
 #checkbox-toggle-3:checked ~ .checkbox-controls label[for="checkbox-toggle-3"]::before,
 #checkbox-toggle-4:checked ~ .checkbox-controls label[for="checkbox-toggle-4"]::before,
 #checkbox-toggle-5:checked ~ .checkbox-controls label[for="checkbox-toggle-5"]::before {
-	background: url("../img/spritesheet.png") no-repeat -10px -70px;
-	-webkit-box-shadow: 0 0 0 1px #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
+	top: -2px;
+	left: 0;
+	width: 24px;
+	height: 24px;
+	background: url("../img/checkbox-on.svg") no-repeat center;
+	background-size: 100%;
+	opacity: 0.7;
 }
 
 .user-block-item .user-submit-btn {
