@@ -359,35 +359,17 @@ body {
 	height: 32px;
 }
 
-.header-btn-block .search::after {
-	content: "";
+.header-btn .search-icon {
 	position: absolute;
-	top: 7px;
+	top: 4px;
 	left: 8px;
-	width: 20px;
-	height: 20px;
-	background-image: url("../img/header/loupe.svg");
-	background-repeat: no-repeat;
 }
 
-.header-btn-item:first-of-type:hover .search,
-.header-btn-item:nth-of-type(2):hover .enter {
+.header-btn-item:hover .search,
+.header-btn-item:hover .enter,
+.header-btn-item:hover .cart {
 	background-color: #f8f7f4;
-}
-
-.header-btn-item:first-of-type:hover .search::after {
-	top: 6px;
-	background: url("../img/spritesheet.png") no-repeat -5px -475px;
-}
-
-.header-btn-item:nth-of-type(2):hover .enter {
 	color: #323232;
-	font-weight: 500;
-}
-
-.header-btn-item:nth-of-type(2):hover .enter::after {
-	color: #323232;
-	background: url("../img/spritesheet.png") no-repeat -5px -183px;
 }
 
 .header-btn-item:first-of-type:hover .header-search-form {
@@ -414,14 +396,10 @@ body {
 	padding-left: 44px;
 }
 
-.header-btn-block .enter::after {
-	content: "";
+.header-btn .enter-icon {
 	position: absolute;
-	top: 6px;
+	top: 5px;
 	left: 16px;
-	width: 21px;
-	height: 19px;
-	background: url("../img/header/entrance.svg") no-repeat;
 }
 
 .header-btn-item:nth-of-type(2):hover .header-enter-form {
@@ -498,32 +476,10 @@ body {
 	padding-left: 44px;
 }
 
-.header-btn-block .cart::after {
-	content: "";
+.header-btn .cart-icon {
 	position: absolute;
 	top: 6px;
 	left: 16px;
-	width: 21px;
-	height: 20px;
-	background: url("../img/header/basket.svg") no-repeat;
-}
-
-.header-btn-block .cart-with-ice {
-	width: 73px;
-	padding-left: 44px;
-	color: #323232;
-	font-weight: 400;
-	background-color: #f7f6f3;
-}
-
-.header-btn-block .cart-with-ice::after {
-	content: "";
-	position: absolute;
-	top: 6px;
-	left: 16px;
-	width: 21px;
-	height: 20px;
-	background: url("../img/spritesheet.png") no-repeat -5px -35px;
 }
 
 .header-btn-item:last-of-type:hover .header-cart-form {
@@ -1163,7 +1119,6 @@ body {
 	height: 24px;
 	background: url("../img/checkbox-on.svg") no-repeat center;
 	background-size: 100%;
-	opacity: 0.7;
 }
 
 .user-block-item .user-submit-btn {
