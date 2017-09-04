@@ -880,6 +880,10 @@ body {
 			flex-direction: column;
 }
 
+.catalog-page {
+	background-image: linear-gradient(#9cb0a5, #849d8f, #9cb0a5); 
+}
+
 .catalog > h2 {
 	margin-top: 2px;
 	margin-right: 0;
@@ -1469,7 +1473,7 @@ body {
 			box-sizing: border-box;
 	margin: 10px 0;
 	padding: 5px;
-	background-image: url("../img/news-subscribe/bg-post.svg");
+	background-image: repeating-linear-gradient(135deg, #f8f7f4, #f8f7f4 7px, #94ceff 7px, #94ceff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);  
 	border-radius: 15px;
 }
 
