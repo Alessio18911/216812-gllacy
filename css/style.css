@@ -1202,10 +1202,6 @@ body {
 	width: 267px;
 }
 
-.catalog-item:nth-child(n+5) {
-	margin-top: -22px;
-}
-
 .catalog-item img {
 	width: 267px;
 	height: 267px;
@@ -1232,11 +1228,10 @@ body {
 	-webkit-box-ordinal-group: 2;
 	-ms-flex-order: 1;
 	order: 1;
-	margin-top: -41px;
-	margin-bottom: auto;
+	margin-top: -43px;
+	margin-bottom: -14px;
 	padding: 0 5px;
 	text-align: center;
-	color: #fff;
 }
 
 .catalog-item-price {
@@ -1244,7 +1239,7 @@ body {
 	z-index: 2;
 	bottom: 63px;
 	margin: 0;
-	text-shadow: .5px .9px 3px rgba(49, 50, 53, .5);
+	text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 1.2;
@@ -1263,7 +1258,7 @@ body {
 	bottom: 4px;
 	width: 31px;
 	height: 36px;
-	content: '';
+	content: "";
 	background: url(../img/catalog/ruble.svg) no-repeat;
 }
 
@@ -1288,9 +1283,6 @@ body {
 }
 
 .catalog-item:hover::after {
-	-webkit-transition: all .2s ease;
-	-o-transition: all .2s ease;
-	transition: all .2s ease;
 	opacity: 1;
 }
 
