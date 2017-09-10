@@ -915,7 +915,7 @@ body {
 	-ms-flex-line-pack: justify;
 		align-content: space-between;
 	min-height: 146px;
-	margin-bottom: 23px;
+	margin-bottom: 31px;
 	padding: 0 13px;
 	font-weight: 500;
 }
@@ -1150,8 +1150,8 @@ body {
 .user-block-item .user-submit-btn {
 	width: 143px;
 	margin-top: auto;
-	padding-top: 7px;
-	padding-bottom: 7px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	font-weight: inherit;
@@ -1200,6 +1200,7 @@ body {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	width: 267px;
+	margin-top: -10px;
 }
 
 .catalog-item img {
@@ -1299,7 +1300,7 @@ body {
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 	width: 200px;
-	margin: 15px auto 0;
+	margin: 25px auto 0;
 	padding: 10px;
 	opacity: 0;
 	color: #fefefe;
@@ -1323,9 +1324,9 @@ body {
 /* --------------------------PAGINATOR------------------------- */
 
 .paginator {
-	width: 200px;
+	width: 189px;
 	margin-left: auto;
-	margin-top: 41px;
+	margin-top: 47px;
 	margin-bottom: 14px;
 	padding: 13px;
 	font-size: 0;
@@ -1375,7 +1376,7 @@ body {
 .paginator .next {
 	margin-left: 14px;
 	margin-right: 0;
-	background-position:  2px 6px;
+	background-position: 2px 6px;
 }
 
 .paginator .paginator-disabled {
