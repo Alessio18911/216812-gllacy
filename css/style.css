@@ -455,7 +455,7 @@ body {
 
 .header-enter-bottom .enter-btn {
 	margin-top: auto;
-	margin-right: 19px;
+	margin-right: 16px;
 	margin-bottom: auto;
 	margin-left: 0;
 	padding-top: 13px;
@@ -983,14 +983,14 @@ body {
 	width: 218px;
 }
 
-.price #win1,
-.price #win2 {
+.price .win1,
+.price .win2 {
 	position: absolute;
 	top: 0;
 	left: 40px;
 }
 
-.price #win2 {
+.price .win2 {
 	left: 110px;
 }
 
