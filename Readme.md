@@ -1,7 +1,7 @@
 ﻿# Личный проект «Глейси»
 
 * Студент: [Алексей Иванов](https://up.htmlacademy.ru/htmlcss/18/user/216812).
-* Наставник: (https://htmlacademy.ru/profile/ip).
+* Наставник: [Игорь Плиев](https://htmlacademy.ru/profile/ip).
 
 ---
 
