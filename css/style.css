@@ -178,6 +178,21 @@ body {
 	color: #5b9ddf;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+*:focus {
+	outline: 1px solid darkblue;
+}
+
 /* ----------------------------HEADER-------------------------- */
 
 .header {
@@ -205,7 +220,6 @@ body {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	/* outline: 1px solid yellow; */
 }
 
 .header-nav-item {
@@ -221,7 +235,6 @@ body {
 .header-nav a {
 	font-weight: 700;
 	border-bottom: 1px solid rgba(247, 246, 243, 0.3);
-	/* outline: 1px solid violet; */
 }
 
 .header-nav-item:hover {
@@ -351,14 +364,16 @@ body {
 
 .header-btn {
 	position: relative;
+	font-size: 14px;
 	font-weight: 500;
 	line-height: 32px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
+	outline: 1px solid red;
 }
 
 .header-btn-block .search {
-	width: 33px;
+	width: 32px;
 	height: 32px;
 }
 
@@ -750,7 +765,7 @@ body {
 }
 
 .bonus-item {
-	max-width: 560px;
+	width: 560px;
 }
 
 .bonus .item-rasp,
@@ -792,34 +807,21 @@ body {
 .bonus-item p {
 	margin-top: 0;
 	margin-right: 0;
-	margin-bottom: 38px;
+	margin-bottom: 43px;
 	margin-left: 1px;
 	line-height: 1.23;
 }
 
 .bonus .bonus-btn {
-	margin-top: 5px;
-	margin-right: 0;
-	margin-bottom: 4px;
-	margin-left: auto;
-	padding-top: 12px;
-	padding-right: 23px;
-	padding-bottom: 11px;
-	padding-left: 23px;
+	-ms-flex-item-align: end;
+	align-self: flex-end;
+	margin-bottom: 5px;
+	padding: 11px 23px;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 1.33;
 }
 
-.bonus .rasp-btn {
-	padding-left: 22px;
-}
-
-.bonus .choc-btn {
-	padding-top: 11px;
-	padding-right: 20px;
-	padding-left: 22px;
-}
 /* -------------------------BREADCRUMBS------------------------- */
 
 .breadcrumbs-nav {
@@ -887,7 +889,7 @@ body {
 }
 
 .catalog-page {
-	background-image: linear-gradient(#9cb0a5, #849d8f, #9cb0a5); 
+	background-image: linear-gradient(#9cb0a5, #849d8f, #9cb0a5);
 }
 
 .catalog > h2 {
@@ -944,6 +946,10 @@ body {
 	width: 193px;
 }
 
+.sort-select::-ms-expand {
+	display: none;
+}
+
 .sort-select {
 	-webkit-appearance: none;
 	font-family: "Roboto", "Arial", sans-serif;
@@ -952,13 +958,13 @@ body {
 	background-repeat: no-repeat;
 	background-position: 170px center;
 	-moz-appearance: none;
-	text-indent: 0.01px; 
-	-o-text-overflow: ''; 
+	text-indent: 0.01px;
+	-o-text-overflow: '';
 		text-overflow: '';
 }
 
 .sort-select option {
-	font-size: 14px; 
+	font-size: 14px;
 	color: #323232;
 }
 
@@ -990,8 +996,10 @@ body {
 
 .price .user-block-field {
 	position: relative;
-	padding-top: 17px;
+	padding-top: 16px;
+	padding-right: 20px;
 	padding-bottom: 15px;
+	padding-left: 20px;
 }
 
 .price .range-slider {
@@ -1000,7 +1008,7 @@ body {
 
 .price .range-active {
 	position: absolute;
-	top: 17px;
+	top: 16px;
 	left: 40px;
 	width: 45%;
 	border: 2px solid #f8f7f4;
@@ -1011,11 +1019,12 @@ body {
 	content: "";
 	position: absolute;
 	z-index: 1;
-	top: 9px;
+	top: 8px;
 	left: 35px;
-	width: 20px;
-	height: 20px;
-	background-color: #f8f7f4;
+	width: 4px;
+	height: 4px;
+	background-color: #ababab;
+	border: 8px solid #f8f7f4;
 	border-radius: 50%;
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 	cursor: pointer;
@@ -1098,10 +1107,7 @@ body {
 	opacity: 1;
 }
 
-#radio1:checked ~ .radio-controls label[for="radio1"]::before,
-#radio2:checked ~ .radio-controls label[for="radio2"]::before,
-#radio3:checked ~ .radio-controls label[for="radio3"]::before,
-#radio4:checked ~ .radio-controls label[for="radio4"]::before {
+.radio-controls input[type=radio]:checked + label::before {
 	background: url("../img/radio-on.svg") no-repeat;
 	background-size: 100%;
 }
@@ -1119,11 +1125,7 @@ body {
 	padding-right: 17px;
 }
 
-#checkbox-toggle-1:checked ~ .checkbox-controls label[for="checkbox-toggle-1"]::before,
-#checkbox-toggle-2:checked ~ .checkbox-controls label[for="checkbox-toggle-2"]::before,
-#checkbox-toggle-3:checked ~ .checkbox-controls label[for="checkbox-toggle-3"]::before,
-#checkbox-toggle-4:checked ~ .checkbox-controls label[for="checkbox-toggle-4"]::before,
-#checkbox-toggle-5:checked ~ .checkbox-controls label[for="checkbox-toggle-5"]::before {
+.checkbox-controls input[type="checkbox"]:checked + label::before {
 	top: -1px;
 	left: -2px;
 	width: 24px;
@@ -1132,15 +1134,10 @@ body {
 	background-size: 100%;
 }
 
-#radio1:disabled ~ .radio-controls label[for="radio1"],
-#radio2:disabled ~ .radio-controls label[for="radio2"],
-#radio3:disabled ~ .radio-controls label[for="radio3"],
-#radio4:disabled ~ .radio-controls label[for="radio4"],
-#checkbox-toggle-1:disabled ~ .checkbox-controls label[for="checkbox-toggle-1"],
-#checkbox-toggle-2:disabled ~ .checkbox-controls label[for="checkbox-toggle-2"],
-#checkbox-toggle-3:disabled ~ .checkbox-controls label[for="checkbox-toggle-3"],
-#checkbox-toggle-4:disabled ~ .checkbox-controls label[for="checkbox-toggle-4"],
-#checkbox-toggle-5:disabled ~ .checkbox-controls label[for="checkbox-toggle-5"] {
+.radio-controls input[type=radio]:disabled + label,
+.radio-controls input[type=radio]:disabled + label::before,
+.checkbox-controls input[type="checkbox"]:disabled + label,
+.checkbox-controls input[type="checkbox"]:disabled + label::before {
 	opacity: 0.4;
 	cursor: default;
 }
@@ -1235,6 +1232,7 @@ body {
 .catalog-item img {
 	position: relative;
 	margin-bottom: 10px;
+	border-radius: 50%;
 }
 
 .catalog-ice a {
@@ -1243,45 +1241,46 @@ body {
 	border-bottom: 1px solid rgba(247, 246, 243, 0.3);
 }
 
-.catalog-item .item-mask {
+.catalog-item::before {
 	display: none;
+	content: "";
 	position: absolute;
 	top: 0;
 	left: -13px;
 	-webkit-box-sizing: inherit;
 			box-sizing: inherit;
 	width: 293px;
+	min-height: 119%;
 	padding: 13px;
-	padding-top: 290px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 5px;
 }
 
-.catalog-item:hover .item-mask {
+.catalog-item .mask-btn {
+	display: none;
+	box-sizing: inherit;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 200px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	padding: 10px 13px;
+	font-size: 18px;
+	line-height: 1.33;
+	border: none;
+}
+
+.catalog-item:hover::before {
 	display: block;
 	z-index: 1;
 }
 
-.catalog-item .mask-btn {
-	margin-top: 5px;
-	margin-right: auto;
-	margin-bottom: 10px;
-	margin-left: auto;
-	padding: 10px 22px;
-	font-size: 18px;
-	line-height: 1.33;
-}
-
-.catalog-item:hover img,
-.catalog-item:hover a,
-.catalog-item .mask-btn:hover {
+.catalog-item:hover::before ~ .mask-btn {
+	display: block;
 	z-index: 1;
-	border: none;
-}
-
-.catalog-ice .hit:hover::after,
-.catalog-item:hover .catalog-item-price {
-	z-index: 2;
 }
 
 /* --------------------------PAGINATOR------------------------- */
@@ -1491,7 +1490,7 @@ body {
 			box-sizing: border-box;
 	margin: 10px 0;
 	padding: 5px;
-	background-image: repeating-linear-gradient(135deg, #f8f7f4, #f8f7f4 7px, #94ceff 7px, #94ceff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);  
+	background-image: repeating-linear-gradient(135deg, #f8f7f4, #f8f7f4 7px, #94ceff 7px, #94ceff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
 	border-radius: 15px;
 }
 
@@ -1624,6 +1623,18 @@ body {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
+	animation-name: shadow;
+	animation-duration: 3s;
+}
+
+@keyframes shadow {
+	from {
+		background-color: rgba(0, 0, 0, 1);
+	}
+	
+	to {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
 }
 
 .modal-show {
@@ -1632,25 +1643,25 @@ body {
 
 @keyframes opacity { 
 	from {
-		top: 16.5%;
-		left: 32.3%;
 		opacity: 0;
 	}
 	
 	to {
-		top: 16.5%;
-		left: 32.3%;
 		opacity: 1;
 	}
 }
 
 @keyframes appear {
 	from {
+		top: 16.5%;
+		left: 32.3%;
 		transform: scale(0) rotate(0deg);
 	}
 	
 	to {
-		transform: scale(1) rotate(1800deg);
+		top: 16.5%;
+		left: 32.3%;
+		transform: scale(1) rotate(7200deg);
 	}
 }
 
@@ -1676,8 +1687,8 @@ body {
 		-ms-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
 	animation-name: appear, opacity;
-	animation-duration: 1s, 1s;
-	animation-timing-function: linear, ease-in-out;
+	animation-duration: 3s, 3s;
+	animation-timing-function: ease-in-out, linear;
 }
 
 .modal-window .form-block {
