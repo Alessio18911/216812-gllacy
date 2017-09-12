@@ -2036,6 +2036,11 @@ body {
 	margin-left: 5px;
 }
 
+.footer .logo-link:focus {
+	outline: 2px dashed #ff0000;
+	outline-offset: 3px;
+}
+
 .footer-copyrights-paragraph {
 	margin-top: 0;
 	margin-right: 0;
