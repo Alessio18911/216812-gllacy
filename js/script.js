@@ -53,4 +53,5 @@ if (document.getElementById("index-page"))
 			icon: image
 		});
 	}
+	
 }
