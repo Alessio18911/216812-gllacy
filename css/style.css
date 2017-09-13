@@ -15,6 +15,7 @@ body {
 .page {
 	background-repeat: no-repeat;
 	background-position: center top;
+	outline: 1px solid red;
 }
 
 .wrap-without-map {
