@@ -18,6 +18,7 @@ body {
 }
 
 .wrap-without-map {
+	position: relative;
 	width: 1200px;
 	margin: 0 auto;
 }
@@ -66,7 +67,7 @@ body {
 	box-shadow: 0 2px 2px rgba(85, 8, 0, 0.6);
 	font-size: 18px;
 	font-weight: 700;
-	line-height: 24px;
+	line-height: 1.33;
 }
 
 .all-btn:hover,
@@ -98,7 +99,7 @@ body {
 	display: none;
 	position: absolute;
 	top: 36px;
-	z-index: 2;
+	z-index: 3;
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 	padding-bottom: 19px;
@@ -109,9 +110,41 @@ body {
 			box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
+.form-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+			flex-direction: column;
+	position: relative;
+	min-width: 241px;
+	margin-top: 1px;
+	padding-top: 19px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.form-block label {
+	-webkit-box-ordinal-group: 0;
+		-ms-flex-order: -1;
+			order: -1;
+	position: absolute;
+	top: 24px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	padding-left: 14px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.71;
+	color: #999999;
+}
+
 .all-input {
 	-webkit-box-sizing: inherit;
 			box-sizing: inherit;
+	position: relative;
 	padding-top: 10px;
 	padding-right: 13px;
 	padding-bottom: 8px;
@@ -122,21 +155,6 @@ body {
 	background-color: #ffffff;
 	border: 1px solid rgba(178, 178, 178, 0.5);
 	border-radius: 5px;
-}
-
-.all-input::-webkit-input-placeholder {
-	color: #999999;
-	font-weight: 400;
-}
-
-.all-input:-ms-input-placeholder {
-	color: #999999;
-	font-weight: 400;
-}
-
-.all-input::placeholder {
-	color: #999999;
-	font-weight: 400;
 }
 
 .all-input:hover {
@@ -153,43 +171,13 @@ body {
 	outline: none;
 }
 
-.all-input:focus::-webkit-input-placeholder {
-	visibility: hidden;
-}
-
-.all-input:focus:-ms-input-placeholder {
-	visibility: hidden;
-}
-
-.all-input:focus::placeholder {
-	visibility: hidden;
+.all-input:required:valid + label {
+	top: 24px;
+	color: #999999;
 }
 
 .all-input:focus + label {
-	visibility: visible;
-}
-
-.form-block {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-			flex-direction: column;
-	min-width: 241px;
-	margin-top: 1px;
-	padding: 0 15px;
-}
-
-.form-block label {
-	visibility: hidden;
-	-webkit-box-ordinal-group: 0;
-		-ms-flex-order: -1;
-			order: -1;
-	padding-top: 5px;
-	padding-bottom: 2px;
-	padding-left: 14px;
+	top: 0;
 	font-size: 11px;
 	line-height: 1.18;
 	color: #5b9ddf;
@@ -409,8 +397,10 @@ body {
 
 .header-btn-item:hover .search,
 .header-btn-item:hover .enter,
+.header-btn-item:hover .cart,
 .header-btn-item:focus .search,
-.header-btn-item:focus .enter {
+.header-btn-item:focus .enter,
+.header-btn-item:focus .cart {
 	background-color: #f8f7f4;
 	color: #323232;
 }
@@ -457,6 +447,7 @@ body {
 }
 
 .header-enter-form {
+	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 		-ms-flex-direction: column;
@@ -557,18 +548,63 @@ body {
 	padding-bottom: 22px;
 	padding-left: 13px;
 	color: #323232;
+	outline: 1px solid green;
 }
 
 .header-cart-list {
-	display: table;
+	position: relative;
 	margin-bottom: 7px;
-	padding-bottom: 14px;
-	border-bottom: 1px solid #cacac7;
+	padding-bottom: 8px;
+	border-collapse: collapse;
 	cursor: default;
 }
 
-.header-cart-list .column {
-	display: table-column;
+.header-cart-list::after {
+	content: "";
+	display: table;
+	position: absolute;
+	bottom: -15px;
+	width: 100%;
+	height: 1px;
+	background-color: #cacac7;
+}
+
+.header-cart-item td {
+	box-sizing: border-box;;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.23;
+	font-weight: 400;
+}
+
+.header-cart-item .cell-1 {
+	position: relative;
+	padding-left: 28px;
+	padding-right: 0;
+}
+
+.header-cart-item .cross-small {
+	display: block;
+	position: absolute;
+	top: 33.5%;
+	left: 0;
+	width: 19px;
+	height: 19px;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.header-cart-item .cross-small:focus {
+	outline: 2px dashed #ff0000;
+	outline-offset: 3px;
+}
+
+.header-cart-item img {
+	display: block;
 }
 
 .header-cart-list .col-2 {
@@ -583,48 +619,13 @@ body {
 	width: 80px;
 }
 
-.header-cart-item {
-	display: table-row;
-}
-
-.header-cart-item li {
-	display: table-cell;
-	padding: 10px 14px;
-	vertical-align: middle;
-}
-
-.header-cart-item .cell-1 {
-	position: relative;
-	padding-left: 28px;
-	padding-right: 0;
-}
-
-.header-cart-item .cross-small {
-	display: block;
-	position: absolute;
-	top: 23%;
-	left: 3px;
-	width: 11px;
-	height: 11px;
-	cursor: pointer;
-}
-
-.header-cart-item img {
-	display: block;
-}
-
-.header-cart-item p {
-	margin: 0;
-	font-size: 13px;
-	line-height: 1.23;
-	font-weight: 400;
-}
-
 .header-cart-item .price-per-kg {
 	color: #999999;
 }
 
 .header-cart-form .cart-total {
+	width: 130px;
+	margin-top: 15px;
 	margin-left: auto;
 	text-align: right;
 	font-size: 15px;
@@ -1410,11 +1411,16 @@ body {
 	margin-right: 0;
 }
 
-.paginator a:hover:not(.paginator-active) {
+.paginator .paginator-current-page {
+	color: #323232;
+	background-color: #e9e9e9;
+}
+
+.paginator a:not(.paginator-current-page):hover {
 	background-color: #9db1a5;
 }
 
-.paginator a:active {
+.paginator  a:not(.paginator-current-page):active {
 	color: #323232;
 	background-color: #e9e9e9;
 }
@@ -1424,8 +1430,8 @@ body {
 	outline-offset: 5px;
 }
 
-.paginator .prev,
-.paginator .next {
+.paginator .prev-page,
+.paginator .next-page {
 	display: inline-block;
 	width: 10px;
 	height: 27px;
@@ -1435,7 +1441,7 @@ body {
 	cursor: pointer;
 }
 
-.paginator .prev {
+.paginator .prev-page {
 	margin-right: 14px;
 	-webkit-transform: rotate(180deg);
 		-ms-transform: rotate(180deg);
@@ -1443,15 +1449,10 @@ body {
 	background-position: center;
 }
 
-.paginator .next {
+.paginator .next-page {
 	margin-left: 11px;
 	margin-right: 0;
 	background-position: 2px 6px;
-}
-
-.paginator .paginator-active {
-	color: #323232;
-	background-color: #e9e9e9;
 }
 
 .paginator .disabled {
@@ -1686,8 +1687,8 @@ body {
 		-ms-flex-pack: justify;
 			justify-content: space-between;
 	position: absolute;
-	top: 62px;
-	right: 7.55%;
+	top: -367px;
+	right: 28px;
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 	width: 301px;
@@ -1746,7 +1747,7 @@ body {
 .modal-content {
 	display: none;
 	position: fixed;
-	z-index: 2;
+	z-index: 5;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);

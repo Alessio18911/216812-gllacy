@@ -60,7 +60,7 @@
 											</a>
 											<form class="all-form header-search-form" action="https://echo.htmlacademy.ru" method="get">
 												<div class="form-block">
-													<input class="all-input search-field" name="search" id="search-field" placeholder="Что ищем?">
+													<input class="all-input search-field" name="search" id="search-field">
 													<label>Что ищем?</label>
 												</div>
 											</form>
@@ -75,11 +75,11 @@
 											</a>
 											<form class="header-enter-form all-form " action="https://echo.htmlacademy.ru" method="post">
 												<div class="form-block">
-													<input class="all-input" type="email" name="email" id="email-field" placeholder="Электронная почта">
+													<input class="all-input" type="email" name="email" id="email-field">
 													<label>Электронная почта</label>
 												</div>
 												<div class="form-block">
-													<input class="all-input" type="password" name="password" placeholder="Пароль">
+													<input class="all-input" type="password" name="password">
 													<label>Пароль</label>
 												</div>
 												<div class="header-enter-bottom">
@@ -92,57 +92,40 @@
 											</form>
 										</li>
 									<li class="header-btn-item" tabindex="0">
-										<a class="header-btn cart cart-full"  tabindex="-1">
+										<a href="#" class="header-btn cart cart-full" tabindex="-1">
 											<span class="cart-icon">
 												<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
 											</span>
 											<span class="number-of-goods">2</span> 
 											<span class="goods-word">товара</span>
 											<form class="all-form header-cart-form" action="https://echo.htmlacademy.ru" method="post">
-												<div class="header-cart-list">
-													<div class="column col-1"></div>
-													<div class="column col-2"></div>
-													<div class="column col-3"></div>
-													<div class="column col-4"></div>
-
-													<ul class="header-cart-item">
-														<li class="cell-1">
-															<span class="cross-small" tabindex="0">
+												<table class="header-cart-list">
+													<tr class="header-cart-item">
+														<td class="cell-1">
+															<button class="cross-small" tabindex="0">
 																<p class="visually-hidden">Удалить мороженое из корзины</p>
 																<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
-															</span>
+															</button>
 															<img src="img/ice1-in-cart.png" width="33" height="33" alt="ice1">
-														</li>
-														<li>
-															<p>Пломбир с апельсиновым джемом</p>
-														</li>
-														<li>
-															<p>1,5 кг х <span class="price-per-kg">200 руб.</span></p>
-														</li>
-														<li>
-															<p><span class="price-per-item">300 руб.</span></p>
-														</li>
-													</ul>
+														</td>
+														<td class="col-2">Пломбир с апельсиновым джемом</td>
+														<td class="col-3">1,5 кг х <span class="price-per-kg">200 руб.</span></td>
+														<td class="col-4">300 руб.</td>
+													</tr>
 
-													<ul class="header-cart-item">
-														<li class="cell-1">
-															<span class="cross-small">
+													<tr class="header-cart-item">
+														<td class="cell-1">
+															<button class="cross-small">
 																<p class="visually-hidden">Удалить мороженое из корзины</p>
 																<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
-															</span>
+															</button>
 															<img src="img/ice2-in-cart.png" width="33" height="33" alt="ice2">
-														</li>
-														<li>
-															<p>Клубничный пломбир с присыпкой из белого шоколада</p>
-														</li>
-														<li>
-															<p>1,5 кг х <span class="price-per-kg">300 руб.</span></p>
-														</li>
-														<li>
-															<p><span class="price-per-item">450 руб.</span></p>
-														</li>
-													</ul>
-												</div>
+														</td>
+														<td class="col-2">Клубничный пломбир с присыпкой из белого шоколада</td>
+														<td class="col-3">1,5 кг х <span class="price-per-kg">300 руб.</span></td>
+														<td><span class="price-per-item">450 руб.</span></td>
+													</tr>
+												</table>
 												<div class="cart-total">Итого: <span class="total-price">750 руб.</span></div>
 												<button class="all-btn cart-btn" type="submit">Оформить заказ</button>
 											</form>
@@ -353,13 +336,13 @@
 						</section>
 
 						<div class="paginator">
-							<a class="prev disabled"><p class="visually-hidden">Вернуться на 1 страницу назад</p></a>
-							<a class="first-page paginator-active"><p class="visually-hidden">Первая страница</p>1</a>
+							<a class="prev-page disabled"><p class="visually-hidden">Вернуться на 1 страницу назад</p></a>
+							<a class="paginator-current-page"><p class="visually-hidden">Первая страница</p>1</a>
 							<a href="#"><p class="visually-hidden">Вторая страница</p>2</a>
 							<a href="#"><p class="visually-hidden">Третья страница</p>3</a>
 							<a href="#"><p class="visually-hidden">Третья страница</p>4</a>
-							<a class="last-page" href="#"><p class="visually-hidden">Пятая страница</p>5</a>
-							<a href="#" class="next"><p class="visually-hidden">Перейти на 1 страницу вперёд</p></a>
+							<a href="#"><p class="visually-hidden">Пятая страница</p>5</a>
+							<a class="next-page" href="#"><p class="visually-hidden">Перейти на 1 страницу вперёд</p></a>
 						</div>
 					</section>
 				</div>

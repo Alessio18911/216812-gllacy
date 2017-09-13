@@ -17,15 +17,15 @@
 				<form class="modal-window all-form" action="https://echo.htmlacademy.ru" method="post">
 					<h2>Мы обязательно Вам ответим!</h2>
 					<div class="form-block">
-						<input class="all-input" name="name" id="name-in-focus" placeholder="Как Вас зовут?">
+						<input class="all-input" name="name" id="name-in-focus">
 						<label>Как Вас зовут?</label>
 					</div>
 					<div class="form-block">
-						<input class="all-input" type="email" name="email" placeholder="Ваша почта для ответа?">
+						<input class="all-input" type="email" name="email">
 						<label>Ваша почта для ответа?</label>
 					</div>
 					<div class="form-block">
-						<textarea class="modal-textarea all-input" name="feedback" id="feedback-content" placeholder="Напишите что-нибудь..."></textarea>
+						<textarea class="modal-textarea all-input" name="feedback" id="feedback-content"></textarea>
 						<label>Напишите что-нибудь...</label>
 					</div>
 					<button class="all-btn" type="submit">Отправить</button>
@@ -82,7 +82,7 @@
 											</a>
 											<form class="all-form header-search-form" action="https://echo.htmlacademy.ru" method="get">
 												<div class="form-block">
-													<input class="all-input search-field" name="search" id="search-field" placeholder="Что ищем?">
+													<input class="all-input search-field" name="search" id="search-field">
 													<label>Что ищем?</label>
 												</div>
 											</form>
@@ -97,11 +97,11 @@
 											</a>
 											<form class="header-enter-form all-form " action="https://echo.htmlacademy.ru" method="post">
 												<div class="form-block">
-													<input class="all-input" type="email" name="email" id="email-field" placeholder="Электронная почта">
+													<input class="all-input" type="email" name="email" id="email-field">
 													<label>Электронная почта</label>
 												</div>
 												<div class="form-block">
-													<input class="all-input" type="password" name="password" placeholder="Пароль">
+													<input class="all-input" type="password" name="password">
 													<label>Пароль</label>
 												</div>
 												<div class="header-enter-bottom">
@@ -287,7 +287,7 @@
 											и будете всегда в курсе	всего самого вкусного, что у нас происходит.
 											Обещаем не спамить и не	слать всякой ненужной ерунды. Честно &#61;&#41;
 										</label>
-										<input class="all-input email" type="email" name="subscribe-email" id="subscribe-email" placeholder="Электронная почта">
+										<input class="all-input email" type="email" name="subscribe-email" id="subscribe-email">
 										<button class="all-btn send-btn" type="submit">Отправить</button>
 									</div>
 								</form>
@@ -300,17 +300,19 @@
 			<section class="map-wrapper">
 				<h2 class="visually-hidden">Схема проезда и адрес</h2>
 				<div class="map" id="map"></div>
-				<div class="feedback">
-					<p>
-						Адрес главного офиса<br>
-						и офлайн магазина: <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-					</p>
-					<p>
-						Для заказов по телефону:<br>
-						<a class="all-links" href="tel:88124502525">8 812 450-25-25</a>
-						(с 10 до 20 ежедневно)
-					</p>
-					<a class="feedback-btn all-btn" href="https://echo.htmlacademy.ru">Форма обратной связи</a>
+				<div class="wrap-without-map">
+					<div class="feedback">
+						<p>
+							Адрес главного офиса<br>
+							и офлайн магазина: <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+						</p>
+						<p>
+							Для заказов по телефону:<br>
+							<a class="all-links" href="tel:88124502525">8 812 450-25-25</a>
+							(с 10 до 20 ежедневно)
+						</p>
+						<a class="feedback-btn all-btn" href="https://echo.htmlacademy.ru">Форма обратной связи</a>
+					</div>
 				</div>
 			</section>
 			
