@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 		<title>Gllacy: Главная</title>
 		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<input class="slider-radio" type="radio" name="toggle" id="btn-1" checked>
@@ -17,15 +17,15 @@
 				<form class="modal-window all-form" action="https://echo.htmlacademy.ru" method="post">
 					<h2>Мы обязательно Вам ответим!</h2>
 					<div class="form-block">
-						<input class="all-input" name="name" id="name-in-focus">
+						<input class="all-input" name="name" id="name-in-focus" required>
 						<label for="name-in-focus">Как Вас зовут?</label>
 					</div>
 					<div class="form-block">
-						<input class="all-input" type="email" name="email" id="email">
+						<input class="all-input" type="text" name="email" id="email" required>
 						<label for="email">Ваша почта для ответа?</label>
 					</div>
 					<div class="form-block">
-						<textarea class="modal-textarea all-input" name="feedback" id="feedback-content"></textarea>
+						<textarea class="modal-textarea all-input" name="feedback" id="feedback-content" minlength="5" required></textarea>
 						<label>Напишите что-нибудь...</label>
 					</div>
 					<button class="all-btn" type="submit">Отправить</button>
@@ -80,7 +80,7 @@
 										</a>
 										<form class="all-form header-search-form" action="https://echo.htmlacademy.ru" method="get">
 											<div class="form-block">
-												<input class="all-input search-field" name="search" id="search-field">
+												<input class="all-input search-field" name="search" id="search-field" required>
 												<label for="search-field">Что ищем?</label>
 											</div>
 										</form>
@@ -94,11 +94,11 @@
 										</a>
 										<form class="header-enter-form all-form " action="https://echo.htmlacademy.ru" method="post">
 											<div class="form-block">
-												<input class="all-input" type="email" name="email" id="email-field">
+												<input class="all-input" type="text" name="email" id="email-field" required>
 												<label for="email-field">Электронная почта</label>
 											</div>
 											<div class="form-block">
-												<input class="all-input" type="password" name="password" id="password">
+												<input class="all-input" type="password" name="password" id="password" required>
 												<label for="password">Пароль</label>
 											</div>
 											<div class="header-enter-bottom">
@@ -119,13 +119,13 @@
 										</a>
 									</li>
 								</ul>
-							
+
 								<section class="header-time-phone">
 									<h2 class="visually-hidden">Время работы и контактный телефон</h2>
 									<p>С 10 до 20, ежедневно</p>
 									<a class="all-links" href="tel:88124502525">8 812 450-25-25</a>
 								</section>
-							</div>	
+							</div>
 						</div>
 					</header>
 				</div>
@@ -139,7 +139,7 @@
 							<label for="btn-2" tabindex="0"><span class="visually-hidden">Шоколадный пломбир и лимоный сорбет</span></label>
 							<label for="btn-3" tabindex="0"><span class="visually-hidden">Пломбир с помадкой и клубничный щербет</span></label>
 						</div>
-						
+
 						<h2 class="visually-hidden">Слайды с акционными морожеными</h2>
 						<div class="slide" id="slide1">
 							<h1>Крем-брюле и пломбир с малиновым джемом</h1>
@@ -291,7 +291,7 @@
 										и будете всегда в курсе	всего самого вкусного, что у нас происходит.
 										Обещаем не спамить и не	слать всякой ненужной ерунды. Честно &#61;&#41;
 									</label>
-									<input class="all-input email" type="email" name="subscribe-email" id="subscribe-email">
+									<input class="all-input email" type="text" name="subscribe-email" id="subscribe-email" required>
 									<button class="all-btn send-btn" type="submit">Отправить</button>
 								</div>
 							</form>
@@ -361,7 +361,7 @@
 							<h2 class="visually-hidden">Наши реквизиты</h2>
 							<div class="footer-logo">
 								<a class="logo-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-									<img src="img/footer/logo-htmlacademy.svg" width="108" height="38" alt="HTML Academy">
+									<img src="img/footer/logo-htmlacademy.svg" width="108" height="38" alt="Перейти на страницу базового интенсива HTML Academy">
 									<p class="visually-hidden">HTML Academy</p>
 								</a>
 							</div>
