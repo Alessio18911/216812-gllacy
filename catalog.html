@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Gllacy: Каталог</title>
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
@@ -20,13 +20,13 @@
 						</div>
 
 						<ul class="header-nav">
-							<li class="header-nav-item">
-								<a href="#">Каталог</a>
+							<li class="header-nav-item current-nav-link">
+								<a class="current-link" href="#">Каталог</a>
 								<ul class="header-dropdown">
 									<li class="header-dropdown-item">
 										<a href="#">Новинки</a>
 									</li>
-									<li class="header-dropdown-item">
+									<li class="header-dropdown-item current-link">
 										<a href="catalog.html">Сливочное</a>
 									</li>
 									<li class="header-dropdown-item">
@@ -336,13 +336,23 @@
 						</section>
 
 						<div class="paginator">
-							<a class="prev-page disabled"><p class="visually-hidden">Вернуться на 1 страницу назад</p></a>
+							<a class="prev-page disabled">
+								<p class="visually-hidden">Вернуться на 1 страницу назад</p>
+								<span class="arrow-left">
+									<svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="currentColor" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
+								</span>
+							</a>
 							<a class="paginator-current-page"><p class="visually-hidden">Первая страница</p>1</a>
 							<a href="#"><p class="visually-hidden">Вторая страница</p>2</a>
 							<a href="#"><p class="visually-hidden">Третья страница</p>3</a>
 							<a href="#"><p class="visually-hidden">Третья страница</p>4</a>
 							<a href="#"><p class="visually-hidden">Пятая страница</p>5</a>
-							<a class="next-page" href="#"><p class="visually-hidden">Перейти на 1 страницу вперёд</p></a>
+							<a class="next-page" href="#">
+								<p class="visually-hidden">Перейти на 1 страницу вперёд</p>
+								<span class="arrow-right">
+									<svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="currentColor" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
+								</span>
+							</a>
 						</div>
 					</section>
 				</div>

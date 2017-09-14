@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Gllacy: Главная</title>
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
@@ -286,13 +286,15 @@
 							<h2 class="visually-hidden">Подписка на рассылку</h2>
 							<form class="subscribe" action="https://echo.htmlacademy.ru" method="post">
 								<div class="subscribe-inner">
-									<label for="subscribe-email">
-										Подпишитесь на нашу сладкую рассылку
+									<p>Подпишитесь на нашу сладкую рассылку
 										и будете всегда в курсе	всего самого вкусного, что у нас происходит.
 										Обещаем не спамить и не	слать всякой ненужной ерунды. Честно &#61;&#41;
-									</label>
-									<input class="all-input email" type="text" name="subscribe-email" id="subscribe-email" required>
-									<button class="all-btn send-btn" type="submit">Отправить</button>
+									</p>
+									<div class="form-block">
+										<input class="all-input email" type="text" name="subscribe-email" id="subscribe-email" required>
+										<label for="subscribe-email">Электронная почта</label>
+										<button class="all-btn send-btn" type="submit">Отправить</button>
+									</div>
 								</div>
 							</form>
 						</div>
